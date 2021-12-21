@@ -24,11 +24,11 @@ public class Box : MonoBehaviour
 
         if (Vector3.Dot(playerTransform.forward, -boxTransform.forward) > ERROR)
         {
-            Debug.Log("Pushed box backward");
+            Debug.Log("Pushed box forward");
         }
         else if (Vector3.Dot(playerTransform.forward, boxTransform.forward) > ERROR)
         {
-            Debug.Log("Pushed box forward");
+            Debug.Log("Pushed box backward");
         }
         else if (Vector3.Dot(playerTransform.forward, -boxTransform.right) > ERROR)
         {
